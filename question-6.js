@@ -2,6 +2,7 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  return products.filter(function quantityMoreThanZero(item) {return item.quantity > 0})
 }
 
 // ตัวอย่างการใช้งาน
